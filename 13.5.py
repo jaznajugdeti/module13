@@ -34,7 +34,7 @@ class UserState(StatesGroup):
 
 @dp.message_handler(commands= ['start'])
 async def start(message):
-    await message.answer('Привет! Я бот помогающий твоему здоровью.', replay_markup=kb)
+    await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup=kb)
 
 @dp.message_handler(text= 'Информация')
 async def inform(message):
